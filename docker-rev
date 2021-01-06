@@ -1,0 +1,6 @@
+apt update; apt install docker.io; docker pull node; docker run -d -t --privileged=true --name aaaa node; sleep 4; docker exec -it aaaa bash
+
+docker pull node
+docker run -d -t --privileged=true --name aaaa node
+sleep 4
+docker exec -it aaaa bash
